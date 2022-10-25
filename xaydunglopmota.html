@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  // Viết một lớp các đối tượng mô tả loại dữ liệu nhiệt độ lấy tên là Temperature. Các thông số mô tả cho nhiệt độ gồm:
+  // Trị số tính theo đơn vị độ C (giá trị nhỏ nhất -273 độ)
+  // Có tính năng chuyển đổi từ độ C sang độ F.
+  // Có tính năng chuyển đổi từ độ C sang độ Kenvin.
+
+  class Temperature {
+    doC;
+    constructor(doC) {
+      this.doC = doC;
+    }
+    getconvertCtoF() {
+      let doF = (this.doC*1.8)+32 ;
+      return doF;
+    }
+    getconvertCtoK() {
+      let doK = this.doC+273;
+      return doK
+    }
+  }
+  let temperature = new Temperature(3)
+  console.log('độ F là ' + temperature.getconvertCtoF() + 'Độ K là ' + temperature.getconvertCtoK())
+</script>
+</body>
+</html>

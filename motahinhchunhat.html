@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  class Rectangle {
+    longs;
+    width;
+    constructor(longs,width) {
+      this.longs = longs;
+      this.width = width;
+    }
+    getArea() {
+        let area = this.longs*this.width
+      return area;
+    }
+    getPerimeter() {
+        let perimeter = (this.longs + this.width)*2
+      return perimeter;
+    }
+  }
+  let hcn = new Rectangle(4,7)
+  console.log('dien tich la'+ hcn.getArea() + '---' + 'chu vi la' + hcn.getPerimeter())
+</script>
+</body>
+</html>
