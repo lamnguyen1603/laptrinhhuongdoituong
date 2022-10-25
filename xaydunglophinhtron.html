@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  class Circle {
+    radius;
+    color ;
+    constructor(radius,color) {
+      this.radius = radius;
+      this.color =color ;
+    }
+    getRadius() {
+      return this.radius;
+    }
+    getArea() {
+        return Math.PI*this.radius*this.radius;
+    }
+  }
+  let circle = new Circle(2)
+  console.log('ban kinh hinh tron' +circle.getRadius() + 'chu vi hinh tron' + circle.getArea())
+</script>
+
+</body>
+</html>
